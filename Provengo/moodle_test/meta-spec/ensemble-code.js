@@ -12,6 +12,24 @@ const GOALS = [
     Ctrl.markEvent("MyCoursesHideStar")
 ];
 
+
+/**
+ * Goals for Two-Way criterion - We want to test the combination in different order of each two actions in the system.
+ */
+
+// let studentEvents = ['EndLoginStudent', 'WentMyCourses', 'EndStarCourse']
+// let teacherEvents = ['EndLoginTeacher', 'TeacherWentToMyCourses', 'TeacherWentToCourse', 'EndHideCourse']
+
+// const GOALS = [];
+// studentEvents.forEach(event1 => {
+//   teacherEvents.forEach(event2 => {
+//     GOALS.push(Ctrl.markEvent(`${event1}${event2}`));
+//     if(!((event1 === 'WentMyCourses' || event1 === 'EndLoginStudent') && (event2 === 'TeacherWentToCourse' || event2 === 'EndHideCourse'))){
+//         GOALS.push(Ctrl.markEvent(`${event2}${event1}`));
+//     }
+//   })
+// })
+
 /**
  * Ranks test suites by how many events from the GOALS array were met.
  * The more goals are met, the higher the score.
@@ -52,6 +70,7 @@ function rankByMetGoals(ensemble) {
  * @param {Event[]} test The test suite to be ranked.
  * @returns Number of events from GOALS that have been met.
  */
+
 function rankSingleTestByMetGoals(test) {
     const unreachedGoals = [];
     for (let idx = 0; idx < GOALS.length; idx++) {
@@ -83,17 +102,16 @@ function rankSingleTestByMetGoals(test) {
  * @param {Event[][]} ensemble the test suite/ensemble to be ranked
  * @returns the percentage of goals covered by `ensemble`.
  */
-/*
-function rankingFunction(ensemble) {
+// for Two-Way criterion
+// function rankingFunction(ensemble) {
 
-    // How many goals did `ensemble` hit?
-    const metGoalsCount = rankByMetGoals(ensemble);
-    // What percentage of the goals did `ensemble` cover?
-    const metGoalsPercent = metGoalsCount / GOALS.length;
+//     // How many goals did `ensemble` hit?
+//     const metGoalsCount = rankByMetGoals(ensemble);
+//     // What percentage of the goals did `ensemble` cover?
+//     const metGoalsPercent = metGoalsCount / GOALS.length;
 
-    return metGoalsPercent * 100; // convert to human-readable percentage
-}
-*/
+//     return metGoalsPercent * 100; // convert to human-readable percentage
+// }
 
 
 /**
