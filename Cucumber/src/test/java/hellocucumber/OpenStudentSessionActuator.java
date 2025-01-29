@@ -30,11 +30,6 @@ public class OpenStudentSessionActuator extends OpenSessionActuator{
     public void CheckStaredCourse(){
         boolean starred = !driver.findElements(By.xpath(starXpath)).isEmpty();
         assertTrue(starred);
-        
-        //driver.findElement(By.xpath(course3dotsXpath)).click();
-        //waitToLoad(500);
-        //driver.findElement(By.xpath(unstarXpath)).click();
-        //waitToLoad(500);
     }
 
 }

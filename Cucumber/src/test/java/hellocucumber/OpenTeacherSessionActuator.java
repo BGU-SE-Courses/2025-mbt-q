@@ -31,16 +31,12 @@ public class OpenTeacherSessionActuator extends OpenSessionActuator{
     }
 
     public void deleteCourse(){
-        //WebElement hide = driver.findElement(By.id("id_visible_label"));
-        //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hide);
-        // ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 150);");
         ((JavascriptExecutor) driver).executeScript("window.scrollBy({ top: 500, behavior: 'smooth' });"); // scroll to hide / show
         waitToLoad(2000);
         driver.findElement(By.xpath(visibilityXpath)).click();
         waitToLoad(500);
         driver.findElement(By.xpath(hideXpath)).click();
         waitToLoad(500);
-        //((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);"); // scroll to bottom
         ((JavascriptExecutor) driver).executeScript("window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });");
         waitToLoad(2000);
         driver.findElement(By.xpath(saveButtonXpath)).click();
