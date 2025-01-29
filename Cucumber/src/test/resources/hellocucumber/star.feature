@@ -7,8 +7,8 @@ Feature: A student defined a course as starred
     Then the course is starred
 
     Examples:
-      | Username  | Password   | Course          |
-      | student   | Sandbox24* | My first course |
+      | Username | Password | Course |
+      | student | studentQ$A1234 | Course 1 |
 
   Scenario: A teacher deleted a course
      Given the teacher is logged in to the system with "<Username>" and "<Password>"
@@ -17,5 +17,5 @@ Feature: A student defined a course as starred
      Then the course "<Course>" is hidden from students
 
      Examples:
-       | Username  | Password   | Course          |
-       | teacher   | Sandbox24* | My first course |
+       | Username | Password | Course |
+       | teacher | teacherQ$A1234 | Course 1 |

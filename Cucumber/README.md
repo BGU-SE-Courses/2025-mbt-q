@@ -1,6 +1,6 @@
 # Testing Moodle using Cucumber
 
-This directory contains the cucumber files for testing the $$*TODO* module name$$ module of the Moodle application.
+This directory contains the cucumber files for testing the Course/Course starring module of the Moodle application.
 
 ## Running the tests
 
@@ -16,5 +16,3 @@ See files "starCourse.feature" and "hideCourse.feature" for our test's descripti
 ## Step files
 
 The step files in the [src/test/java/hellocucumber](src/test/java/hellocucumber) directory contain the code that defines how each sentence in the feature files is translated to Selenium actions. See the files for a detailed description of the implementation.
-
-$$*TODO* Make sure that each step is documented and properly writen (meaningful variable names, no magic number, etc.). See the [StepDefinitions.java](src/test/java/hellocucumber/StepDefinitions.java) file for an example.$$

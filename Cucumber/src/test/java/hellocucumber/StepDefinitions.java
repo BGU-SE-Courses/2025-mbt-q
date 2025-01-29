@@ -9,7 +9,7 @@ public class StepDefinitions {
     private static OpenTeacherSessionActuator openTeacherSession;
     //    private static List<OpenCartActuatorTeacher> allopenCartsA;
     private String webDriver = "webdriver.chrome.driver";
-    private String path = "C:\\Users\\danaf\\2025-mbt-q\\Selenium\\chromedriver.exe";
+    private String path = "../Selenium/chromedriver.exe";
 
     public void OpenSessionStudent() {
         System.out.println("--------------- INITIALIZING MOODLE TEST - OPENING WEBPAGE ---------------");
