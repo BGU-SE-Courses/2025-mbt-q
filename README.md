@@ -4,7 +4,7 @@ This is a repository for the system-testing assignment of the Software Quality E
 
 ## Assignment Description
 
-In this assignment, we tested an open-source software called Moodle(https://sandbox.moodledemo.net/). //TODO change this
+In this assignment, we tested an open-source software called Moodle(https://sandbox.moodledemo.net/).
 
 Moodle is a software used by universities to manage courses, for both teachers and students.
 Some of the features it provides are adding teachers and students to courses, uploading class material, opening quizes and assignments, and more.
@@ -18,7 +18,7 @@ Some of the features it provides are adding teachers and students to courses, up
    - Created teacher user with username :"teacher" and password: "teacherQ$A1234\*"
    - Created student user with username :"student" and password: "studentQ$A1234\*"
    - Created a course called "Course 1"
-   - Added the teacher user with the role of "Teacher" and to student with a role of "Student" to "My First Course".
+   - Added the teacher user with the role of "Teacher" and to student with a role of "Student" to "Course 1".
 4. To ran the tests, we started the Selenium server according to the instructions in "/Selenium/README.md".
 
 ## What we tested
