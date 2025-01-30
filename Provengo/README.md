@@ -1,5 +1,5 @@
 # Testing Moodle using Provengo
-This directory contains the Provengo project for testing $$*TODO* software name$$.
+This directory contains the Provengo project for testing Moodle.
 
 
 ## Running the tests
